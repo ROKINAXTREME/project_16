@@ -1,0 +1,27 @@
+def add(x, y):
+    print(x+y)
+def subtract(x, y):
+    print(x-y)
+def multiply(x, y):
+    print(x*y)
+def divide(x,y):
+    d=x/y
+    if type(d)==int:
+        print(x//y)
+    else:
+        print(d)
+print("1. add")
+print("2. subtract")
+print("3. multiplacation")
+print("4. division")
+operation=input("select your operation(use the numbers): ")
+num1=int(input("select your first number: "))
+num2=int(input("select your second number: "))
+if operation=="1":
+    add(num1, num2)
+if operation=="2":
+    subtract(num1, num2)
+if operation=="3":
+    multiply(num1, num2)
+if operation=="4":
+    divide(num1, num2)
